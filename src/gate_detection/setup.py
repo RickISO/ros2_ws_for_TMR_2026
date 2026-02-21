@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
-package_name = 'gate_detection_pkg'
+package_name = 'gate_detection'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=['gate_detection_pkg'],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -14,13 +14,16 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ricardo',
-    maintainer_email='ricardo@todo.todo',
-    description='Gate Detection PX4 Package',
-    license='TODO',
+    maintainer_email='177662089+RickISO@users.noreply.github.com',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    extras_require={
+        'test': [
+            'pytest',
+        ],
+    },
     entry_points={
         'console_scripts': [
-            'gate_detection = gate_detection_pkg.gate_detection_node:main',
-            'mission_sm = gate_detection_pkg.state_machine:main',
         ],
     },
 )
