@@ -1,0 +1,23 @@
+[0.376s] Invoking command in '/home/ricardo/ros2_ws/build/aruco_mission_pkg': PYTHONPATH=/home/ricardo/ros2_ws/build/aruco_mission_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ricardo/ros2_ws/install/aruco_mission_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ricardo/ros2_ws/build/aruco_mission_pkg/build --no-deps symlink_data
+[0.534s] running develop
+[0.632s] running egg_info
+[0.632s] creating aruco_mission_pkg.egg-info
+[0.632s] writing aruco_mission_pkg.egg-info/PKG-INFO
+[0.632s] writing dependency_links to aruco_mission_pkg.egg-info/dependency_links.txt
+[0.633s] writing entry points to aruco_mission_pkg.egg-info/entry_points.txt
+[0.633s] writing requirements to aruco_mission_pkg.egg-info/requires.txt
+[0.633s] writing top-level names to aruco_mission_pkg.egg-info/top_level.txt
+[0.633s] writing manifest file 'aruco_mission_pkg.egg-info/SOURCES.txt'
+[0.634s] reading manifest file 'aruco_mission_pkg.egg-info/SOURCES.txt'
+[0.634s] writing manifest file 'aruco_mission_pkg.egg-info/SOURCES.txt'
+[0.635s] running build_ext
+[0.635s] Creating /home/ricardo/ros2_ws/install/aruco_mission_pkg/lib/python3.10/site-packages/aruco-mission-pkg.egg-link (link to .)
+[0.636s] 
+[0.636s] Installed /home/ricardo/ros2_ws/build/aruco_mission_pkg
+[0.636s] running symlink_data
+[0.636s] creating /home/ricardo/ros2_ws/install/aruco_mission_pkg/share/ament_index
+[0.636s] creating /home/ricardo/ros2_ws/install/aruco_mission_pkg/share/ament_index/resource_index
+[0.636s] creating /home/ricardo/ros2_ws/install/aruco_mission_pkg/share/ament_index/resource_index/packages
+[0.637s] symbolically linking /home/ricardo/ros2_ws/build/aruco_mission_pkg/resource/aruco_mission_pkg -> /home/ricardo/ros2_ws/install/aruco_mission_pkg/share/ament_index/resource_index/packages
+[0.637s] symbolically linking /home/ricardo/ros2_ws/build/aruco_mission_pkg/package.xml -> /home/ricardo/ros2_ws/install/aruco_mission_pkg/share/aruco_mission_pkg
+[0.655s] Invoked command in '/home/ricardo/ros2_ws/build/aruco_mission_pkg' returned '0': PYTHONPATH=/home/ricardo/ros2_ws/build/aruco_mission_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ricardo/ros2_ws/install/aruco_mission_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ricardo/ros2_ws/build/aruco_mission_pkg/build --no-deps symlink_data
