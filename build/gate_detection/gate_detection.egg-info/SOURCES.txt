@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+gate_detection/__init__.py
+gate_detection/gate_detection_node.py
+gate_detection/state_machine.py
+gate_detection/states.py
+gate_detection.egg-info/PKG-INFO
+gate_detection.egg-info/SOURCES.txt
+gate_detection.egg-info/dependency_links.txt
+gate_detection.egg-info/entry_points.txt
+gate_detection.egg-info/requires.txt
+gate_detection.egg-info/top_level.txt
+gate_detection.egg-info/zip-safe
+resource/gate_detection
