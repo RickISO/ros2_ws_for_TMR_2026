@@ -1,3 +1,4 @@
 [console_scripts]
-
+gate_detection = gate_detection.gate_detection_node:main
+mission_sm = gate_detection.state_machine:main
 
