@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="tmr_big_tunnel">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- ====================================== -->
+    <!-- 5 BLUE WIDE GATES (1.5m window) -->
+    <!-- ====================================== -->
+    <!-- Base: 0.5m -->
+    <!-- Window: 1.5m -->
+    <!-- Total height: 2m -->
+
+    <!-- ============ GATE 1 ============ -->
+    <model name="gate_1">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="link">
+
+        <!-- Base -->
+        <collision name="base_collision">
+          <pose>0 0 0.25 0 0 0</pose>
+          <geometry>
+            <box><size>1.5 0.05 0.5</size></box>
+          </geometry>
+        </collision>
+
+        <visual name="base_visual">
+          <pose>0 0 0.25 0 0 0</pose>
+          <geometry>
+            <box><size>1.5 0.05 0.5</size></box>
+          </geometry>
+          <material><ambient>0 0 1 1</ambient></material>
+        </visual>
+
+        <!-- Left Post -->
+        <collision name="left_collision">
+          <pose>-0.75 0 1.25 0 0 0</pose>
+          <geometry>
+            <box><size>0.0381 0.05 1.5</size></box>
+          </geometry>
+        </collision>
+
+        <visual name="left_visual">
+          <pose>-0.75 0 1.25 0 0 0</pose>
+          <geometry>
+            <box><size>0.0381 0.05 1.5</size></box>
+          </geometry>
+          <material><ambient>0 0 1 1</ambient></material>
+        </visual>
+
+        <!-- Right Post -->
+        <collision name="right_collision">
+          <pose>0.75 0 1.25 0 0 0</pose>
+          <geometry>
+            <box><size>0.0381 0.05 1.5</size></box>
+          </geometry>
+        </collision>
+
+        <visual name="right_visual">
+          <pose>0.75 0 1.25 0 0 0</pose>
+          <geometry>
+            <box><size>0.0381 0.05 1.5</size></box>
+          </geometry>
+          <material><ambient>0 0 1 1</ambient></material>
+        </visual>
+
+        <!-- Top -->
+        <collision name="top_collision">
+          <pose>0 0 2 0 0 0</pose>
+          <geometry>
+            <box><size>1.5 0.05 0.0381</size></box>
+          </geometry>
+        </collision>
+
+        <visual name="top_visual">
+          <pose>0 0 2 0 0 0</pose>
+          <geometry>
+            <box><size>1.5 0.05 0.0381</size></box>
+          </geometry>
+          <material><ambient>0 0 1 1</ambient></material>
+        </visual>
+
+      </link>
+    </model>
+
+    <!-- ============ GATE 2 ============ -->
+    <model name="gate_2">
+      <static>true</static>
+      <pose>0.5 0 0 0 0 0</pose>
+      <include><uri>model://gate_1</uri></include>
+    </model>
+
+    <!-- ============ GATE 3 ============ -->
+    <model name="gate_3">
+      <static>true</static>
+      <pose>1.0 0 0 0 0 0</pose>
+      <include><uri>model://gate_1</uri></include>
+    </model>
+
+    <!-- ============ GATE 4 ============ -->
+    <model name="gate_4">
+      <static>true</static>
+      <pose>1.5 0 0 0 0 0</pose>
+      <include><uri>model://gate_1</uri></include>
+    </model>
+
+    <!-- ============ GATE 5 ============ -->
+    <model name="gate_5">
+      <static>true</static>
+      <pose>2.0 0 0 0 0 0</pose>
+      <include><uri>model://gate_1</uri></include>
+    </model>
+
+  </world>
+</sdf>
