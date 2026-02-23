@@ -1,9 +1,10 @@
-from enum import Enum
+from enum import Enum, auto
 
 class MissionState(Enum):
-    TAKEOFF = 0
-    SEARCH = 1
-    ALIGN = 2
-    APPROACH = 3
-    PASS = 4
-    DONE = 5
+    IDLE = auto()
+    TAKEOFF = auto()
+    SEARCH_GATE = auto()
+    ALIGN_GATE = auto()
+    APPROACH_GATE = auto()
+    PASS_GATE = auto()
+    FINISHED = auto()
